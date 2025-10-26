@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Photo Gallery</h1>
+    
+    <!-- Main display area -->
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+    
+    <!-- Gallery of images -->
+    <div class="gallery">
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" 
+             alt="Beautiful mountain landscape with snow-capped peaks" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+        
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400" 
+             alt="Peaceful forest path with tall trees" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+        
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" 
+             alt="Tropical beach with crystal clear water" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+        
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400" 
+             alt="Stunning sunset over the valley" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+        
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=400" 
+             alt="Serene desert landscape with dunes" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+        
+        <img class="preview" 
+             src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=400" 
+             alt="Majestic waterfall in the jungle" 
+             onmouseover="upDate(this)" 
+             onmouseout="undo()">
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
