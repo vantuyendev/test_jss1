@@ -6,7 +6,7 @@
     <title>Interactive Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="addTabIndex()">
     <h1>Interactive Photo Gallery</h1>
     
     <!-- Main display area -->
@@ -18,39 +18,51 @@
     <div class="gallery">
         <img class="preview" 
              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" 
-             alt="1" 
+             alt="Beautiful mountain landscape with snow-capped peaks at sunset" 
              onmouseover="upDate(this)" 
-             onmouseout="undo()">
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
         
         <img class="preview" 
              src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400" 
-             alt="2" 
+             alt="Lush green forest path with sunlight filtering through trees" 
              onmouseover="upDate(this)" 
-             onmouseout="undo()">
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
         
         <img class="preview" 
              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" 
-             alt="3" 
+             alt="Tropical beach with turquoise water and palm trees" 
              onmouseover="upDate(this)" 
-             onmouseout="undo()">
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
         
         <img class="preview" 
              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400" 
-             alt="4" 
+             alt="Serene lake view surrounded by autumn foliage and mountains" 
              onmouseover="upDate(this)" 
-             onmouseout="undo()">
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
         
         <img class="preview" 
              src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=400" 
-             alt="5" 
+             alt="Dramatic desert landscape with red rock formations" 
              onmouseover="upDate(this)" 
-             onmouseout="undo()">
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
         
         <img class="preview" 
              src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=400" 
-             alt="6" 
+             alt="Peaceful countryside with rolling hills and wildflowers" 
              onmouseover="upDate(this)" 
-             onmouseout="undo()">
+             onmouseleave="undo()"
+             onfocus="upDate(this)"
+             onblur="undo()">
     </div>
     
     <script src="index.js"></script>

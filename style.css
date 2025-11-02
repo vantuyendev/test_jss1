@@ -55,6 +55,13 @@ h1 {
     border-color: red;
 }
 
+.preview:focus {
+    transform: scale(1.2);
+    border-color: red;
+    outline: 3px solid #ffcc00;
+    outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
     .preview {
         width: 150px;

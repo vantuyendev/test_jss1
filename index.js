@@ -1,7 +1,7 @@
 // Function to update the main display when mouse hovers over an image
 function upDate(previewPic) {
     // Log to console to verify the function is triggered
-    console.log("Mouse over event triggered");
+    console.log("Update event triggered");
     
     // Log information about the previewPic element
     console.log("Alt text:", previewPic.alt);
@@ -20,7 +20,7 @@ function upDate(previewPic) {
 // Function to restore the original state when mouse leaves an image
 function undo() {
     // Log to console to verify the function is triggered
-    console.log("Mouse out event triggered");
+    console.log("Undo event triggered");
     
     // Get the element with id of 'image'
     const imageDiv = document.getElementById('image');
@@ -30,4 +30,25 @@ function undo() {
     
     // Reset the text to the original message
     imageDiv.textContent = "Hover over an image below to display here.";
+}
+
+// Function to add tabindex attribute to all images when page loads
+function addTabIndex() {
+    // Log to console to verify the function is triggered
+    console.log("Page loaded - adding tabindex attributes");
+    
+    // Get all images with class 'preview'
+    const images = document.getElementsByClassName('preview');
+    
+    // Log the number of images found
+    console.log("Number of images found:", images.length);
+    
+    // Loop through each image and add tabindex attribute
+    for (let i = 0; i < images.length; i++) {
+        // Set tabindex to make the image keyboard accessible
+        images[i].setAttribute('tabindex', '0');
+        console.log("Added tabindex to image", i + 1);
+    }
+    
+    console.log("All tabindex attributes added successfully");
 }
